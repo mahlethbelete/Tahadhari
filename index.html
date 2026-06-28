@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tahadhari — Predictive Model for Anti-Poaching</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <base target="_blank" />
+    <base target="_blank" />
+    <base target="_blank" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="images/LOgo2.png" alt="TAHADHARI Logo" />
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#team">Our Team</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1>Predictive Intelligence for Wildlife Conservation</h1>
+        <p>
+          Securing the future of the Mara's pride by converting fragmented park
+          data into proactive anti-poaching action.
+        </p>
+        <button class="btn btn-green">Explore More</button>
+      </div>
+    </section>
+
+    <section class="bg-green section-fixed" id="about">
+      <div class="split">
+        <div class="split-text">
+          <div class="section-label">About Us</div>
+          <h2 class="section-title">Navigating the Mara</h2>
+          <p>
+            TAHADHARI acts as an offline-first conservation intelligence layer
+            above park infrastructure to monitor and combat critical poaching
+            cycles.
+          </p>
+          <p>
+            By converting fragmented park metrics into predictive, evidence-led
+            protection paths, we empower local wildlife teams to secure the
+            future of the pride.
+          </p>
+        </div>
+        <div class="split-img-wrap">
+          <img
+            src="images/lions.jpg"
+            alt="Lions in the Mara"
+            class="split-img"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white section-fixed" id="services">
+      <div class="section-label">OUR SERVICES</div>
+      <h2 class="section-title">Core Analytical Services</h2>
+      <div class="cards-4">
+        <div class="card">
+          <div
+            class="card-img"
+            style="background-image: url(images/ai.jpg)"
+          ></div>
+          <h3>Predictive Intelligence</h3>
+          <p>
+            AI-powered risk scoring across 1km grid squares using XGBoost,
+            satellite data, and 3 years of crime logs to forecast 48-hour
+            poaching hotspots.
+          </p>
+        </div>
+        <div class="card">
+          <div
+            class="card-img"
+            style="background-image: url(images/dispatch.jpg)"
+          ></div>
+          <h3>Commander Dispatch</h3>
+          <p>
+            Real-time OpenStreetMap dashboard with color-coded heatmaps.
+            Commanders click red zones to assign patrols and auto-retrain the
+            model on returned field logs.
+          </p>
+        </div>
+        <div class="card">
+          <div
+            class="card-img"
+            style="background-image: url(images/offline.jpg)"
+          ></div>
+          <h3>Offline Visualization</h3>
+          <p>
+            PWA with Service Worker caching. Rangers preload maps and target
+            grids over base Wi-Fi, then access everything offline in zero-signal
+            bush zones.
+          </p>
+        </div>
+        <div class="card">
+          <div
+            class="card-img"
+            style="background-image: url(images/reporting3.jpg)"
+          ></div>
+          <h3>Fast-Form Logger</h3>
+          <p>
+            3-tap snare reporting with auto-captured GPS and timestamps. Data
+            stores locally in IndexedDB and syncs automatically when
+            connectivity returns.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-green section-fixed how-section" id="commander-platform">
+      <div class="section-label">SERVICES</div>
+      <h2 class="section-title">Our Platform</h2>
+      <div class="pwa-label">PWA — Commander</div>
+      <div class="steps-4">
+        <div class="step">
+          <div class="step-num">01</div>
+          <div
+            class="step-img"
+            style="background-image: url(&quot;images/dash.jpg&quot;)"
+          ></div>
+          <h4>Dashboard</h4>
+          <p>
+            Processes multi-year crime logs and live environmental data feeds
+            through an XGBoost AI model to predict 48-hour threat areas.
+          </p>
+        </div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <div
+            class="step-img"
+            style="background-image: url(&quot;images/map.jpg&quot;)"
+          ></div>
+          <h4>Visual and Hotspot</h4>
+          <p>
+            Maps AI-calculated risk scores onto an interactive OpenStreetMap
+            layer using intuitive, color-coded 1km by 1km grid squares.
+          </p>
+        </div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <div
+            class="step-img"
+            style="background-image: url(&quot;images/teams.jpg&quot;)"
+          ></div>
+          <h4>Assign Team</h4>
+          <p>
+            Allows operations commanders to click any critical red zone grid to
+            instantly configure and deploy targeted field patrol routes.
+          </p>
+        </div>
+        <div class="step">
+          <div class="step-num">04</div>
+          <div
+            class="step-img"
+            style="background-image: url(&quot;images/report.jpg&quot;)"
+          ></div>
+          <h4>View Report</h4>
+          <p>
+            Ingests synchronized field logs submitted by returned teams to
+            automatically retrain and sharpen the next prediction engine cycle.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-cream section-fixed how-section" id="ranger-platform">
+      <div class="section-label">SERVICES</div>
+      <h2 class="section-title">Our Platform</h2>
+      <div class="pwa-label">PWA — Ranger</div>
+      <div class="steps-2">
+        <div class="step">
+          <div class="step-num">01</div>
+          <div
+            class="step-img"
+            style="background-image: url(&quot;images/map2.jpg&quot;)"
+          ></div>
+          <h4>Visual and Map</h4>
+          <p>
+            Displays pre-cached 48-hour target grids and topographical routes
+            perfectly in deep bush zones using local Service Worker storage.
+          </p>
+        </div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <div
+            class="step-img"
+            style="background-image: url(&quot;images/report2.jpg&quot;)"
+          ></div>
+          <h4>Report</h4>
+          <p>
+            Logs captured wire snares instantly via a rapid 3-tap form that
+            records automated GPS data offline using a local IndexedDB browser
+            database.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white section-fixed" id="team">
+      <div class="team-header">
+        <div class="section-label">Personnel</div>
+        <h2 class="section-title">Our Team</h2>
+      </div>
+      <div class="team-grid">
+        <div class="team-card">
+          <div
+            class="team-avatar"
+            style="background-image: url(&quot;images/claree.jpg&quot;)"
+          ></div>
+          <h3>Clare Tondori</h3>
+          <p>Software Engineer</p>
+        </div>
+        <div class="team-card up">
+          <div
+            class="team-avatar"
+            style="background-image: url(&quot;images/shamy.jpg&quot;)"
+          ></div>
+          <h3>Shamy Umukundwa</h3>
+          <p>Software Engineer</p>
+        </div>
+        <div class="team-card">
+          <div
+            class="team-avatar"
+            style="background-image: url(&quot;images/gladys.jpg&quot;)"
+          ></div>
+          <h3>Gladys Ouma</h3>
+          <p>Software Engineer</p>
+        </div>
+        <div class="team-card up">
+          <div
+            class="team-avatar"
+            style="background-image: url(&quot;images/lucy.jpg&quot;)"
+          ></div>
+          <h3>Lucy Gacema</h3>
+          <p>Software Engineer</p>
+        </div>
+        <div class="team-card">
+          <div
+            class="team-avatar"
+            style="background-image: url(&quot;images/mahi.jpg&quot;)"
+          ></div>
+          <h3>Mahlet Hiluf</h3>
+          <p>Software Engineer</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-green section-fixed" id="contact">
+      <div class="split-contact">
+        <div class="contact-left">
+          <ul class="contact-nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#team">Our Team</a></li>
+          </ul>
+          <div class="contact-info">
+            <div class="section-label">Our Contact</div>
+            <div class="contact-item">
+              <span class="contact-icon">&#9742;</span>
+              <span>+254709864536</span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">&#9993;</span>
+              <span>Compil-Her@gmail.com</span>
+            </div>
+          </div>
+        </div>
+        <div class="contact-right">
+          <h2 class="contact-heading">GET IN TOUCH WITH US</h2>
+          <form class="contact-form">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" />
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5"></textarea>
+            <button type="submit" class="btn-submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
